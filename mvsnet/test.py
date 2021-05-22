@@ -134,9 +134,12 @@ class MVSGenerator:
                 real_cams = np.copy(croped_cams) 
                 scaled_cams = scale_mvs_camera(croped_cams, scale=FLAGS.sample_scale)
 
+                print("resize_scale:",resize_scale)
+                print("croped_images:",croped_images)
                 # return mvs input
                 scaled_images = []
                 for view in range(self.view_num):
+                    print("croped_images[view]:",croped_images[view])
                     scaled_images.append(scale_image(croped_images[view], scale=FLAGS.sample_scale))
                 scaled_images = np.stack(scaled_images, axis=0)
                 croped_images = np.stack(croped_images, axis=0)
