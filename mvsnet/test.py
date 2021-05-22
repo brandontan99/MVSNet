@@ -135,7 +135,6 @@ class MVSGenerator:
                 scaled_cams = scale_mvs_camera(croped_cams, scale=FLAGS.sample_scale)
 
                 print("resize_scale:",resize_scale)
-                print("resize_scale.shape:",resize_scale.shape)
                 print("croped_images:",croped_images)
                 print("croped_images.shape:",croped_images.shape)
                 # return mvs input
