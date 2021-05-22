@@ -136,7 +136,6 @@ class MVSGenerator:
 
                 print("resize_scale:",resize_scale)
                 print("croped_images:",croped_images)
-                print("croped_images.shape:",croped_images.shape)
                 # return mvs input
                 scaled_images = []
                 for view in range(self.view_num):
